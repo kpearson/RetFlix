@@ -1,0 +1,9 @@
+<h1><%= @movie.title %></h1><%= @movie.year_released %>
+<p>Description: <ul><%= @movie.description %></ul></p>
+<br><br>
+
+
+
+	<ul><%= link_to("Edit #{@movie.title}", "/movies/#{@movie.id}/edit") %></ul>
+
+	<ul><%= link_to("Back to main page", "/movies") %></ul>
